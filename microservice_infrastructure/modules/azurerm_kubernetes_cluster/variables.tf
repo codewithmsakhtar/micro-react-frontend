@@ -1,12 +1,9 @@
 variable "aks_clusters" {
   type = map(object({
-
     aks_name            = string
     resource_group_name = string
     location            = string
     dns_prefix          = string
-
-    sku_tier = optional(string, "Free")
 
     default_node_pool = object({
       name       = string
@@ -15,7 +12,10 @@ variable "aks_clusters" {
     })
 
     identity_type = optional(string, "SystemAssigned")
-
-    tags = optional(map(string), {})
+    tags          = optional(map(string), {})
   }))
+}
+
+variable "aks_subnet_id" {
+  type = string
 }
