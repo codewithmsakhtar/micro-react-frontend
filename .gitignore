@@ -18,3 +18,22 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+
+# Plan files
+*.tfplan
+
+# Crash logs
+crash.log
+
+# Variable files (agar secrets hain)
+*.auto.tfvars
+
+# Sensitive files
+*.pem
+*.key
