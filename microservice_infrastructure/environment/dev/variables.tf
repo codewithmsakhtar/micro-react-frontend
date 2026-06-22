@@ -1,5 +1,19 @@
-variable "rgs" {}
-variable "vnets" {}
-variable "aks_clusters" {}
-variable "acrs" {}
-variable "subnets" {}
+variable "rgs" {
+  type = any
+}
+
+variable "vnets" {
+  type = any
+}
+
+variable "subnets" {
+  type = any
+}
+
+variable "acrs" {
+  type = any
+}
+
+variable "aks_clusters" {
+  type = any
+}
