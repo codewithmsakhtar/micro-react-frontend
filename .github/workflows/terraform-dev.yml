@@ -86,7 +86,7 @@ jobs:
         uses: bridgecrewio/checkov-action@v12
         with:
           directory: ${{ env.TF_WORKING_DIR }}
-        soft_fail: true  
+          args: --soft-fail 
 
       # Terraform Plan
       - name: Terraform Plan
