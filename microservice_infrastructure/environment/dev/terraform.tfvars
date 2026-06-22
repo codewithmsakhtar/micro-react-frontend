@@ -57,12 +57,12 @@ subnets = {
 
 acrs = {
   acr1 = {
-    acr_name            = "shahtechacr001"   # Globally unique hona chahiye
+    acr_name            = "shahtechacr001" # Globally unique hona chahiye
     resource_group_name = "rg-dev"
     location            = "Central India"
 
-    sku            = "Basic"
-    admin_enabled  = true
+    sku           = "Basic"
+    admin_enabled = true
 
     tags = {
       environment = "dev"
@@ -88,7 +88,7 @@ aks_clusters = {
       name       = "system"
       node_count = 1
       vm_size    = "Standard_B2s_v2"
-      
+
     }
 
     identity_type = "SystemAssigned"
